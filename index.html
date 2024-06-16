@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        header {
+            background-color: steelblue;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            padding: 2rem 0;
+        }
+        footer {
+            background-color: steelblue;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .button-container a {
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+        }
+        .button-container a img {
+            width: 100%;
+            height: auto;
+            border: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            .button-container {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Project</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#creator">Creator</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section id="home">
+            <h2>Home</h2>
+            <div class="button-container">
+                <a href="https://erikaflorentino17.github.io/resume/">
+                    <img src="EResume.jpg" alt="Button 1">
+                    <p>RESUME</p>
+                </a>
+                <a href="https://erikaflorentino17.github.io/registrationform/">
+                    <img src="ERegform.jpg" alt="Button 2">
+                    <p>REGISTRATION FORM</p>
+                </a>
+                <a href="https://erikaflorentino17.github.io/restaurant/">
+                    <img src="ERestaurant.jpg" alt="Button 3">
+                    <p>RESTAURANT MENU</p>
+                </a>
+                <a href="https://erikaflorentino17.github.io/Eshop/">
+                    <img src="EShop.jpg" alt="Button 4">
+                    <p>SHOP</p>
+                </a>
+            </div>
+        </section>
+        <section id="creator">
+            <h2>Creator</h2>
+            <p>Erika Florentino<br>
+              BSIT 3-2
+              Sinaliw Malaki, Alfonso, Cavite
+            </p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 My Projects Website</p>
+    </footer>
+</body>
+</html>
